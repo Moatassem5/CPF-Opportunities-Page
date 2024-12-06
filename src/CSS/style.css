@@ -1,17 +1,3 @@
-/* 
-GuidLines 
------------
-COLORS :-
-Main : #1B252F
-Secondary : #fabd05
-
-------------
-FONTS :-
-Titles : Poppins , 65px, weight: normal
-paragraph : Poppins, 16px, weight:600
-
-*/
-
 :root {
   --Primary-color: #1b252f;
   --Secondary-color: #fabd05;
@@ -82,7 +68,7 @@ header {
   color: var(--Secondary-color);
   text-align: center;
   margin: 2rem 0;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .title {
@@ -94,11 +80,82 @@ main {
   width: 120rem;
 }
 
-.discreption {
-  margin: 5rem 0;
+.discreption-section {
+  margin: 8rem 0;
 }
 .page-discribtion {
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--Primary-color);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  gap: 3rem;
+  align-items: center;
+}
+
+.card {
+  background-color: #e7edf3;
+  width: 80rem;
+  border: var(--Secondary-color) solid 0.1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
+}
+
+.hide {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+.card-title {
+  color: var(--Primary-color);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.line-break {
+  width: 30%;
+  margin-bottom: 1rem;
+  border-color: var(--Secondary-color);
+}
+.card-description {
+  color: var(--Primary-color);
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.card-Features li {
+  list-style: none;
+  color: #27394c;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.apply-container {
+  text-align: right;
+}
+
+.Apply-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  color: var(--Primary-color);
+  background-color: var(--Secondary-color);
+}
+.Apply-btn:hover {
+  background-color: var(--Primary-color);
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
