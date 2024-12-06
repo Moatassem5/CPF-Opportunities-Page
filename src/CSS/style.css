@@ -12,3 +12,67 @@ paragraph : Poppins, 16px, weight:600
 
 */
 
+:root {
+  --Primary-color: #1b252f;
+  --Secondary-color: #fabd05;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  margin-top: 2rem;
+}
+
+.Logo {
+  width: 9.7rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+.list-item {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--Primary-color);
+}
+
+.list-item:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+
+.btn-join {
+  border: none;
+  color: var(--Primary-color);
+  background-color: var(--Secondary-color);
+  font-size: 1.9rem;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-join:hover {
+  background-color: var(--Primary-color);
+  color: white;
+}
