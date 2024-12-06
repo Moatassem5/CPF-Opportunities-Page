@@ -1,0 +1,113 @@
+/* Large Desktop and Default Styles (1200px and above) */
+@media (max-width: 1200px) {
+  main {
+    width: 100%;
+    padding: 0 4rem;
+  }
+
+  .card {
+    width: 70rem;
+  }
+
+  nav {
+    gap: 10rem;
+  }
+}
+
+/* Medium screens and Tablets (900px and below) */
+@media (max-width: 900px) {
+  nav {
+    gap: 30%;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-list {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    padding: 2rem 0;
+    z-index: 1000;
+  }
+
+  .nav-list.active {
+    left: 0;
+  }
+}
+
+/* Small tablets and large phones (600px and below) */
+@media (max-width: 600px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .page-discribtion {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .btn-join,
+  .Apply-btn {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  header {
+    padding: 3rem;
+  }
+}
+
+/* Small phones (400px and below) */
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+
+  .card-Features li {
+    font-size: 1.4rem;
+  }
+
+  .card-description {
+    font-size: 1.4rem;
+  }
+}
