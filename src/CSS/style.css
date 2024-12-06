@@ -36,7 +36,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 15rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .Logo {
@@ -75,4 +75,30 @@ nav {
 .btn-join:hover {
   background-color: var(--Primary-color);
   color: white;
+}
+
+header {
+  background-color: var(--Primary-color);
+  color: var(--Secondary-color);
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 6.5rem;
+}
+
+main {
+  margin: 0 auto;
+  width: 120rem;
+}
+
+.discreption {
+  margin: 5rem 0;
+}
+.page-discribtion {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--Primary-color);
 }
